@@ -1,0 +1,170 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    line-height:1.6;
+    color:#222;
+    background:#f8f9fb;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    background:#0d1b2a;
+    color:#fff;
+    padding:18px 0;
+    position:sticky;
+    top:0;
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo span{color:#d4af37;}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.nav-btn,.btn-primary,.btn-secondary{
+    padding:12px 22px;
+    border-radius:6px;
+    text-decoration:none;
+    display:inline-block;
+}
+
+.nav-btn,.btn-primary{
+    background:#d4af37;
+    color:#000;
+}
+
+.btn-secondary{
+    border:2px solid #fff;
+    color:#fff;
+}
+
+section{padding:70px 0;}
+
+#hero{
+    background:#0d1b2a;
+    color:#fff;
+    text-align:center;
+}
+
+.hero-buttons{margin:25px 0;}
+
+.hero-stats{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:35px;
+}
+
+.stat-box,.service-card,.process-box,.faq-item,.footer-box{
+    background:#fff;
+    color:#222;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.services-grid,.process-grid,.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.contact-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-family:inherit;
+}
+
+button{
+    background:#d4af37;
+    border:none;
+    padding:12px 24px;
+    cursor:pointer;
+    border-radius:6px;
+}
+
+footer{
+    background:#0d1b2a;
+    color:#fff;
+    padding:40px 0;
+}
+
+footer a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.footer-bottom{
+    text-align:center;
+    margin-top:20px;
+}
+
+.scroll-top{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#d4af37;
+    color:#000;
+    padding:12px 15px;
+    border-radius:50%;
+    text-decoration:none;
+}
+
+@media(max-width:768px){
+header .container,
+contact-wrapper{
+display:block;
+}
+
+nav ul{
+flex-direction:column;
+margin-top:15px;
+}
+
+.contact-wrapper{
+grid-template-columns:1fr;
+}
+
+.hero-stats{
+flex-direction:column;
+}
+}
