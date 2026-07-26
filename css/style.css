@@ -159,15 +159,13 @@ footer a{
 
     .menu-toggle{
         display:block;
-        font-size:28px;
+        font-size:30px;
         cursor:pointer;
         color:#fff;
-        margin-top:10px;
     }
 
     #nav-menu{
         display:none;
-        width:100%;
     }
 
     #nav-menu.active{
@@ -178,7 +176,7 @@ footer a{
         display:flex;
         flex-direction:column;
         gap:15px;
-        margin-top:20px;
+        margin-top:15px;
     }
 
     .contact-wrapper{
